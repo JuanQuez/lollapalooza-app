@@ -54,11 +54,11 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-tertiary);
+  background: var(--color-primary);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
+  background: var(--color-tertiary);
   border-radius: 2rem;
 }
 
@@ -90,6 +90,7 @@ p {
 button {
   background-color: var(--color-tertiary);
   padding: 0.7rem;
+  font-size: 1.4rem;
   border-radius: 0.2rem;
   transition: all 0.2s ease-in;
 
