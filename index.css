@@ -2,7 +2,9 @@
 .navbar__menu,
 .header__content,
 .about-us,
-.about-us__content {
+.about-us__content,
+.carousel,
+.carousel__item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +85,7 @@
   .about-us__content {
     height: 40rem;
     width: 60rem;
-    border-radius: .4rem;
+    border-radius: 0.4rem;
     padding: 2.5rem;
     flex-direction: column;
     text-align: center;
@@ -96,5 +98,33 @@
     p {
       font-size: 1.2rem;
     }
+  }
+}
+
+.carousel {
+  position: relative;
+  background: url(/public/assets/img/67c6088cf31f20665cdfe47f_Asset.webp)
+    repeat center / cover;
+
+    &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: var(--cap-overlay);
+    z-index: 0;
+    }
+  &,
+  .carousel__item {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    z-index: 1;
+  }
+
+  .carousel__item img {
+    width: 25rem;
+    height: 25rem;
+    filter: drop-shadow(0 0 2rem rgba(0, 0, 0, 0.5));
   }
 }
