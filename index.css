@@ -1,16 +1,17 @@
+.navbar,
+.navbar__menu,
+.header__content,
+.about-us,
+.about-us__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
-  height: 100dvh;
   width: 100%;
   background: url(/public/assets/img/65f8e6c26074bad23400d4a4_LOLLA24-Home-Hero-Background-3000x2400.jpg)
     no-repeat center 10% / cover;
-
-  .navbar,
-  .navbar__menu,
-  .header__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   &,
   .navbar,
@@ -72,8 +73,28 @@
     p {
       font-size: 1.5rem;
     }
+  }
+}
 
-    button {
+.about-us {
+  background: url(/public/assets/img/67c608e3c05351d99c4ff0b0_Asset.webp)
+    no-repeat center center / cover;
+
+  .about-us__content {
+    height: 40rem;
+    width: 60rem;
+    border-radius: .4rem;
+    padding: 2.5rem;
+    flex-direction: column;
+    text-align: center;
+    background: var(--cap-overlay);
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
     }
   }
 }

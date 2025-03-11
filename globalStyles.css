@@ -87,6 +87,14 @@ p {
   color: var(--color-secondary);
 }
 
+h2 {
+  font-size: 4rem;
+}
+
+.full-screen-section {
+  height: 100dvh;
+}
+
 button {
   background-color: var(--color-tertiary);
   padding: 0.7rem;
