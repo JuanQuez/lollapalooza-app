@@ -83,22 +83,75 @@
         </div>
       </section>
       <section class="contact full-screen-section" id="contact">
-        <h2>Contact us</h2>
-        <form action="#">
+        <form class="contact__form" action="#">
+          <h2>Contact us</h2>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="You name"
+            required
+          />
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="You Email"
+            required
+          />
           <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea
+            id="message"
+            maxlength="500"
+            name="message"
+            placeholder="Write us you message"
+            required
+          ></textarea>
           <button type="submit">Send</button>
         </form>
+
+        <iframe
+          class="contact__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4282.477162049369!2d-58.52380150996356!3d-34.47897900338015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb1ed3fe2b1f9%3A0xfc072d735ddc47d8!2sLollapalooza%20Festival%20Argentina!5e1!3m2!1ses-419!2sco!4v1741719309230!5m2!1ses-419!2sco"
+          width="500"
+          height="500"
+          allowfullscreen="true"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
       <section class="footerbar">
         <div class="footerbar__content">
-          <p>© 2025 Lollapalooza. All rights reserved.</p>
-          <p>Privacy Policy</p>
-          <p>Terms of Service</p>
+          <div class="footerbar__social-media">
+            <a href="#">
+              <img
+                src="/public/assets/svg/facebook-internet-media-svgrepo-com.svg"
+                alt="Facebook"
+                class="footerbar__social-media__icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/public/assets/svg/instagram-internet-media-svgrepo-com.svg"
+                alt="Instagram"
+                class="footerbar__social-media__icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="/public/assets/svg/internet-media-social-4-svgrepo-com.svg"
+                alt="x"
+                class="footerbar__social-media__icon"
+              />
+            </a>
+          </div>
+          <div class="footerbar__text">
+            <a href="#"> Privacy Policy </a>
+            <a href="#"> Terms of Service </a>
+            <p>© 2025 Lollapalooza. All rights reserved.</p>
+          </div>
         </div>
       </section>
     </main>
